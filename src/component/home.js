@@ -8,27 +8,8 @@ import {
     Route
 } from "react-router-dom";
 
+
 class Home extends Component{
-    state = {
-        sessionId: null,
-        pid: null,
-        pname: null,
-        pimg: null,
-        price: null,
-        stock: null
-    }
-
-    fetchProduct(){
-        if(this.isStockEmpty()){
-
-        }else{
-
-        }
-    }
-    isStockEmpty(){
-        return false;
-    }
-
     render(){
         return (  
             <Container>
