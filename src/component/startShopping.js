@@ -1,6 +1,7 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Row,Col,Card,Button,Modal} from 'react-bootstrap';
+import { Link } from "react-router-dom";
 
 function StartScan(props) {
     return (
@@ -17,6 +18,8 @@ function StartScan(props) {
         </Modal.Header>
         <Modal.Body className="my-5">
           QR CODE SCANNER
+
+          <Link to="./main" onClick={props.onHide} >Main</Link>
         </Modal.Body>
         <Modal.Footer>
           <Button onClick={props.onHide}>Close</Button>
